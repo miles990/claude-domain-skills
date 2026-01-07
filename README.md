@@ -26,7 +26,7 @@
 |------|--------|------|
 | **business/** | marketing, sales, product-management, project-management, strategy | 商業運營 |
 | **finance/** | quant-trading, investment-analysis | 金融專業 |
-| **creative/** | game-design, ui-ux-design, brainstorming | 創意創作 |
+| **creative/** | game-design, ui-ux-design, brainstorming, storytelling, visual-media | 創意創作 |
 | **professional/** | research-analysis, knowledge-management | 專業服務 |
 | **lifestyle/** | personal-growth, side-income | 生活領域 |
 
@@ -43,6 +43,8 @@
 | `creative/game-design` | 遊戲, 關卡, 平衡 | 遊戲設計 |
 | `creative/ui-ux-design` | UI, UX, 無障礙 | 介面體驗設計 |
 | `creative/brainstorming` | 靈感, 頭腦風暴, 創意 | 創意發想方法論 |
+| `creative/storytelling` | 小說, 漫畫, 劇本, 角色 | 故事創作與敘事 |
+| `creative/visual-media` | 攝影, 影片, 動畫, 電影 | 影像創作與製作 |
 | `business/strategy` | 策略, 藍海, 差異化 | 商業策略與競爭優勢 |
 | `professional/research-analysis` | 研究, 競品, 調研 | 研究分析方法論 |
 | `lifestyle/personal-growth` | 人生規劃, 個人品牌, 時間管理 | 個人成長與職涯發展 |
