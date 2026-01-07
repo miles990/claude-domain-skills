@@ -24,10 +24,10 @@
 
 | 大類 | 子領域 | 說明 |
 |------|--------|------|
-| **business/** | marketing, product-management | 商業運營 |
+| **business/** | marketing, product-management, project-management | 商業運營 |
 | **finance/** | quant-trading, investment-analysis | 金融專業 |
 | **creative/** | game-design, ui-ux-design | 創意創作 |
-| **professional/** | (待新增) | 專業服務 |
+| **professional/** | research-analysis | 專業服務 |
 | **lifestyle/** | (待新增) | 生活領域 |
 
 ### 已實現的領域
@@ -37,9 +37,11 @@
 | `finance/quant-trading` | 量化, backtest, 策略 | 量化交易策略開發 |
 | `finance/investment-analysis` | 財報, 投資, 估值 | 投資分析與估值 |
 | `business/product-management` | PRD, OKR, 路線圖 | 產品管理 |
+| `business/project-management` | Scrum, sprint, 甘特圖 | 專案管理 |
 | `business/marketing` | 行銷, CAC, 漏斗 | 行銷策略 |
 | `creative/game-design` | 遊戲, 關卡, 平衡 | 遊戲設計 |
 | `creative/ui-ux-design` | UI, UX, 無障礙 | 介面體驗設計 |
+| `professional/research-analysis` | 研究, 競品, 調研 | 研究分析方法論 |
 
 ## 安裝方式
 
