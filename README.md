@@ -27,8 +27,8 @@
 | **business/** | marketing, sales, product-management, project-management, strategy | 商業運營 |
 | **finance/** | quant-trading, investment-analysis | 金融專業 |
 | **creative/** | game-design, ui-ux-design, brainstorming | 創意創作 |
-| **professional/** | research-analysis | 專業服務 |
-| **lifestyle/** | personal-growth | 生活領域 |
+| **professional/** | research-analysis, knowledge-management | 專業服務 |
+| **lifestyle/** | personal-growth, side-income | 生活領域 |
 
 ### 已實現的領域
 
@@ -46,6 +46,8 @@
 | `business/strategy` | 策略, 藍海, 差異化 | 商業策略與競爭優勢 |
 | `professional/research-analysis` | 研究, 競品, 調研 | 研究分析方法論 |
 | `lifestyle/personal-growth` | 人生規劃, 個人品牌, 時間管理 | 個人成長與職涯發展 |
+| `lifestyle/side-income` | 副業, 被動收入, 投資, 加密貨幣 | 副業與財務自由 |
+| `professional/knowledge-management` | 知識管理, 筆記, PKM | 個人知識系統 |
 
 ## 安裝方式
 
