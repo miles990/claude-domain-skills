@@ -88,13 +88,12 @@ finance/quant-trading/
 ### Triggers 機制
 
 ```yaml
-# SKILL.md frontmatter
+# SKILL.md frontmatter (skillpkg 相容格式)
 ---
+schema: "1.0"
 name: quant-trading
-triggers:
-  zh: [量化, 交易, 回測, 策略, 因子]
-  en: [quant, trading, backtest, strategy, factor]
-tags: [finance, trading, quantitative]
+triggers: [量化, 交易, 回測, 策略, 因子, quant, trading, backtest, strategy, factor]
+keywords: [finance, trading, quantitative]
 ---
 ```
 

@@ -1,11 +1,10 @@
 ---
+schema: "1.0"
 name: skill-name
 version: "1.0.0"
 description: 簡短描述這個 skill 的用途
-triggers:
-  zh: [中文觸發詞1, 中文觸發詞2]
-  en: [english-trigger1, english-trigger2]
-tags: [category, subcategory, topic]
+triggers: [中文觸發詞1, 中文觸發詞2, english-trigger1, english-trigger2]
+keywords: [category, subcategory, topic]
 author: your-name
 ---
 

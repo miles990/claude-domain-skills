@@ -1,11 +1,10 @@
 ---
+schema: "1.0"
 name: game-design
 version: "1.0.0"
 description: 遊戲設計理論、機制設計與玩家體驗
-triggers:
-  zh: [遊戲設計, 遊戲企劃, 關卡設計, 數值平衡, 玩家體驗, GDD]
-  en: [game-design, game-planning, level-design, balance, player-experience, GDD]
-tags: [creative, game, design, entertainment]
+triggers: [遊戲設計, 遊戲企劃, 關卡設計, 數值平衡, 玩家體驗, GDD, game-design, game-planning, level-design, balance, player-experience]
+keywords: [creative, game, design, entertainment]
 author: claude-domain-skills
 ---
 

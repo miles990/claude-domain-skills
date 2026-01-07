@@ -1,11 +1,10 @@
 ---
+schema: "1.0"
 name: investment-analysis
 version: "1.0.0"
 description: 股票分析、財報解讀與投資決策
-triggers:
-  zh: [股票, 財報, 投資, 估值, 基本面, 技術分析, 本益比, ROE]
-  en: [stock, financial-report, investment, valuation, fundamental, technical, PE, ROE]
-tags: [finance, investment, analysis, stock]
+triggers: [股票, 財報, 投資, 估值, 基本面, 技術分析, 本益比, ROE, stock, financial-report, investment, valuation, fundamental, technical, PE, ROE]
+keywords: [finance, investment, analysis, stock]
 author: claude-domain-skills
 ---
 

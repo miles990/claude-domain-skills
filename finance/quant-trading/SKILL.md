@@ -1,11 +1,10 @@
 ---
+schema: "1.0"
 name: quant-trading
 version: "1.0.0"
 description: 量化交易策略開發、回測與風險管理
-triggers:
-  zh: [量化, 交易, 回測, 策略, 因子, 套利, 程式交易, 演算法交易]
-  en: [quant, trading, backtest, strategy, factor, arbitrage, algo-trading]
-tags: [finance, trading, quantitative, investment]
+triggers: [量化, 交易, 回測, 策略, 因子, 套利, 程式交易, 演算法交易, quant, trading, backtest, strategy, factor, arbitrage, algo-trading]
+keywords: [finance, trading, quantitative, investment]
 author: claude-domain-skills
 ---
 

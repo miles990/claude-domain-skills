@@ -1,11 +1,10 @@
 ---
+schema: "1.0"
 name: marketing
 version: "1.0.0"
 description: 數位行銷策略、內容行銷與成效分析
-triggers:
-  zh: [行銷, 廣告, SEO, 社群, 內容, 轉換率, 漏斗, 品牌]
-  en: [marketing, advertising, SEO, social-media, content, conversion, funnel, brand]
-tags: [business, marketing, digital, growth]
+triggers: [行銷, 廣告, SEO, 社群, 內容, 轉換率, 漏斗, 品牌, marketing, advertising, social-media, content, conversion, funnel, brand]
+keywords: [business, marketing, digital, growth]
 author: claude-domain-skills
 ---
 
