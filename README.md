@@ -87,6 +87,8 @@ finance/quant-trading/
 
 ### Triggers 機制
 
+Triggers 讓 AI 能自動識別應該載入哪個領域 skill：
+
 ```yaml
 # SKILL.md frontmatter (skillpkg 相容格式)
 ---
@@ -95,6 +97,66 @@ name: quant-trading
 triggers: [量化, 交易, 回測, 策略, 因子, quant, trading, backtest, strategy, factor]
 keywords: [finance, trading, quantitative]
 ---
+```
+
+#### Triggers vs Keywords
+
+| 欄位 | 用途 | 範例 |
+|------|------|------|
+| `triggers` | **任務匹配** - 用戶說什麼時觸發 | `[財報, 投資, 股票]` |
+| `keywords` | **分類搜尋** - 按領域查找 | `[finance, business]` |
+
+#### 最佳實踐
+
+```yaml
+triggers:
+  # ✅ 包含中英文同義詞
+  - 量化
+  - quantitative
+  - quant
+
+  # ✅ 包含常見用語
+  - 回測
+  - backtest
+  - 策略測試
+
+  # ❌ 避免太通用的詞
+  # - 分析 (太廣泛)
+  # - 報告 (太廣泛)
+```
+
+## 創建新的領域 Skill
+
+```bash
+# 1. 創建目錄
+mkdir -p finance/my-domain
+
+# 2. 創建 SKILL.md
+cat > finance/my-domain/SKILL.md << 'EOF'
+---
+schema: "1.0"
+name: my-domain
+version: "1.0.0"
+description: 領域描述
+triggers: [關鍵詞1, 關鍵詞2, keyword1, keyword2]
+keywords: [category1, category2]
+---
+
+# 領域名稱
+
+## 適用場景
+- 場景 1
+- 場景 2
+
+## 核心知識
+...
+
+## 最佳實踐
+...
+EOF
+
+# 3. 測試
+skillpkg search "關鍵詞1"  # 應該能找到
 ```
 
 ## 貢獻指南
