@@ -26,7 +26,7 @@
 |------|--------|------|
 | **business/** | marketing, product-management, project-management | 商業運營 |
 | **finance/** | quant-trading, investment-analysis | 金融專業 |
-| **creative/** | game-design, ui-ux-design | 創意創作 |
+| **creative/** | game-design, ui-ux-design, brainstorming | 創意創作 |
 | **professional/** | research-analysis | 專業服務 |
 | **lifestyle/** | (待新增) | 生活領域 |
 
@@ -41,6 +41,7 @@
 | `business/marketing` | 行銷, CAC, 漏斗 | 行銷策略 |
 | `creative/game-design` | 遊戲, 關卡, 平衡 | 遊戲設計 |
 | `creative/ui-ux-design` | UI, UX, 無障礙 | 介面體驗設計 |
+| `creative/brainstorming` | 靈感, 頭腦風暴, 創意 | 創意發想方法論 |
 | `professional/research-analysis` | 研究, 競品, 調研 | 研究分析方法論 |
 
 ## 安裝方式
