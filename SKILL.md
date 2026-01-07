@@ -116,9 +116,29 @@ npx claude-starter-kit
 進一步學習的資源
 ```
 
+## 多語言支援 (i18n)
+
+支援多種語言版本：
+
+| 代碼 | 語言 | 狀態 |
+|------|------|------|
+| `zh-TW` | 繁體中文 | ✅ 預設 |
+| `en` | English | 🚧 進行中 |
+
+### 使用英文版
+
+```python
+# 安裝英文版 skill
+mcp__skillpkg__install_skill({
+    "source": "github:miles990/claude-domain-skills#i18n/en/skills/investment-analysis"
+})
+```
+
+詳見 [i18n/README.md](./i18n/README.md)
+
 ## 貢獻指南
 
-歡迎貢獻新領域！請參考 [CONTRIBUTING.md](./CONTRIBUTING.md)
+歡迎貢獻新領域或翻譯！請參考 [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 相關專案
 
