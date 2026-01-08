@@ -150,6 +150,37 @@ triggers:
   # - 報告 (太廣泛)
 ```
 
+### Skill 強化功能
+
+每個領域 skill 可以包含以下強化功能：
+
+| 功能 | 說明 | 用途 |
+|------|------|------|
+| **Sharp Edges** | 領域常見陷阱警告 | 主動提醒用戶避開常見錯誤 |
+| **Validations** | 品質檢查規則 | 自動驗證輸出符合領域標準 |
+| **Collaboration** | 跨領域協作定義 | 智能委派和上下文傳遞 |
+
+```yaml
+# SKILL.md frontmatter 範例
+---
+schema: "1.0"
+name: quant-trading
+collaboration:
+  prerequisites:
+    - skill: python
+      reason: 量化開發基礎
+  delegation_triggers:
+    - trigger: 資料庫設計
+      delegate_to: database
+---
+
+# Sharp Edges
+- id: backtest-overfitting
+  severity: critical
+  situation: 策略回測看起來收益驚人
+  solution: 使用 Walk-forward 驗證和樣本外測試
+```
+
 ## 創建新的領域 Skill
 
 ```bash
