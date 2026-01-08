@@ -3,8 +3,16 @@ schema: "1.0"
 name: brainstorming
 version: "1.0.0"
 description: 創意發想：頭腦風暴、靈感激發、創意思維框架、發散與收斂思考
-triggers: [靈感, 頭腦風暴, 創意, brainstorm, ideation, 發想, 點子, idea, 創新, innovation, 思考, thinking, 發散, divergent, 收斂, convergent]
-keywords: [creative, brainstorming, ideation, thinking]
+domain: creative
+triggers:
+  keywords:
+    primary: [靈感, 頭腦風暴, brainstorm, ideation, 發想, 點子, idea, 創意]
+    secondary: [創新, innovation, 思考, thinking, 發散, divergent, 收斂, convergent, SCAMPER]
+  context_boost: [想法, thoughts, 創造, create, 激發, inspire]
+  context_penalty: [code, 程式, implementation, 實作]
+  priority: medium
+dependencies:
+  software-skills: []
 author: claude-domain-skills
 ---
 

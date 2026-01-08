@@ -3,8 +3,16 @@ schema: "1.0"
 name: storytelling
 version: "1.0.0"
 description: 故事創作：小說寫作、漫畫腳本、影片企劃、敘事結構、角色塑造
-triggers: [小說, novel, 故事, story, 寫作, writing, 漫畫, manga, comic, 劇本, screenplay, 角色, character, 敘事, narrative, 劇情, plot, 世界觀, worldbuilding, 對話, dialogue, 創意寫作, creative writing]
-keywords: [creative, storytelling, writing, narrative]
+domain: creative
+triggers:
+  keywords:
+    primary: [小說, novel, 故事, story, 寫作, writing, 劇本, screenplay, 敘事, narrative]
+    secondary: [漫畫, manga, comic, 角色, character, 劇情, plot, 世界觀, worldbuilding, 對話, dialogue]
+  context_boost: [創作, creative, 創意, imagination, 文學, literature]
+  context_penalty: [code, 程式, api, database, 技術]
+  priority: high
+dependencies:
+  software-skills: []
 author: claude-domain-skills
 ---
 

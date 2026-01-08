@@ -3,8 +3,16 @@ schema: "1.0"
 name: game-design
 version: "1.0.0"
 description: 遊戲設計理論、機制設計與玩家體驗
-triggers: [遊戲設計, 遊戲企劃, 關卡設計, 數值平衡, 玩家體驗, GDD, game-design, game-planning, level-design, balance, player-experience]
-keywords: [creative, game, design, entertainment]
+domain: creative
+triggers:
+  keywords:
+    primary: [遊戲設計, game design, 遊戲企劃, GDD, 關卡設計, level design, 玩家體驗]
+    secondary: [數值平衡, balance, MDA, 核心循環, game loop, roguelike, RPG]
+  context_boost: [遊戲, game, 玩法, gameplay, 機制, mechanics]
+  context_penalty: [marketing, 行銷, 財務]
+  priority: high
+dependencies:
+  software-skills: [game-development]
 author: claude-domain-skills
 ---
 

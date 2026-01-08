@@ -3,8 +3,16 @@ schema: "1.0"
 name: personal-growth
 version: "1.0.0"
 description: 人生規劃：目標設定、個人品牌、時間管理、職涯發展
-triggers: [人生規劃, 個人品牌, personal brand, 目標設定, goal setting, 時間管理, time management, 職涯, career, 自我成長, self-improvement, OKR個人版, 習慣養成, habit, 生產力, productivity]
-keywords: [lifestyle, personal, growth, productivity]
+domain: lifestyle
+triggers:
+  keywords:
+    primary: [人生規劃, 個人品牌, personal brand, 目標設定, goal setting, 時間管理, time management]
+    secondary: [職涯, career, 自我成長, self-improvement, 習慣養成, habit, 生產力, productivity, OKR]
+  context_boost: [人生, life, 成長, growth, 規劃, planning]
+  context_penalty: [code, 程式, api, database, 技術]
+  priority: medium
+dependencies:
+  software-skills: []
 author: claude-domain-skills
 ---
 

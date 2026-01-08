@@ -3,8 +3,16 @@ schema: "1.0"
 name: marketing
 version: "1.0.0"
 description: 數位行銷策略、內容行銷與成效分析
-triggers: [行銷, 廣告, SEO, 社群, 內容, 轉換率, 漏斗, 品牌, marketing, advertising, social-media, content, conversion, funnel, brand]
-keywords: [business, marketing, digital, growth]
+domain: business
+triggers:
+  keywords:
+    primary: [行銷, marketing, SEO, 廣告, advertising, 社群, social media, growth]
+    secondary: [內容, content, 轉換率, conversion, 漏斗, funnel, 品牌, brand, CAC, LTV, ROAS]
+  context_boost: [數據, data, 分析, analytics, 流量, traffic, 用戶, user]
+  context_penalty: [code, 程式, api, backend]
+  priority: high
+dependencies:
+  software-skills: [data-analysis]
 author: claude-domain-skills
 ---
 

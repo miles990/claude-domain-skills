@@ -3,8 +3,16 @@ schema: "1.0"
 name: business-strategy
 version: "1.0.0"
 description: 商業策略：藍海策略、差異化、競爭優勢、價值創新、商業模式設計
-triggers: [策略, strategy, 藍海, blue ocean, 差異化, differentiation, 競爭優勢, 商業模式, business model, 價值主張, value proposition, 洞察, insight, 獨創, 定位, positioning, 護城河, moat, B2B, B2C, C2C, C2B, 電商, ecommerce, 金流, payment, 平台, platform, D2C]
-keywords: [business, strategy, innovation, competitive-advantage]
+domain: business
+triggers:
+  keywords:
+    primary: [策略, strategy, 藍海, blue ocean, 商業模式, business model, 競爭優勢, positioning]
+    secondary: [差異化, differentiation, 價值主張, value proposition, 護城河, moat, B2B, B2C, D2C, 平台, platform]
+  context_boost: [創新, innovation, 市場, market, 分析, 洞察, insight]
+  context_penalty: [技術, code, 程式, frontend]
+  priority: high
+dependencies:
+  software-skills: [documentation]
 author: claude-domain-skills
 ---
 

@@ -3,8 +3,16 @@ schema: "1.0"
 name: research-analysis
 version: "1.0.0"
 description: 研究分析：文獻回顧、競品分析、市場調研、數據分析方法論
-triggers: [研究, research, 分析, analysis, 調研, 文獻, literature, 競品, competitor, 市場調查, market research, 報告, report, 調查, survey, 洞察, insight]
-keywords: [professional, research, analysis, methodology]
+domain: professional
+triggers:
+  keywords:
+    primary: [研究, research, 分析, analysis, 調研, 文獻回顧, literature review, 競品分析, competitor analysis, 市場調查]
+    secondary: [報告, report, 調查, survey, 洞察, insight, 問卷, questionnaire, 訪談, interview, 數據分析, data analysis]
+  context_boost: [方法論, methodology, 質性, quantitative, 量化, qualitative, 框架, framework]
+  context_penalty: [code, 程式, api, frontend, backend]
+  priority: high
+dependencies:
+  software-skills: [documentation]
 author: claude-domain-skills
 ---
 

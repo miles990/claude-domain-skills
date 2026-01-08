@@ -1,10 +1,18 @@
 ---
 schema: "1.0"
 name: ui-ux-design
-version: "1.0.0"
+version: "1.1.0"
 description: UI/UX 設計：介面設計原則、用戶體驗、可用性、無障礙設計
-triggers: [UI, UX, 介面設計, 用戶體驗, 使用者體驗, 可用性, usability, accessibility, 無障礙, wireframe, 線框圖, prototype, 原型, design system, 設計系統]
+triggers:
+  keywords:
+    primary: [UI, UX, 介面設計, 用戶體驗, interface, user-experience, wireframe]
+    secondary: [usability, accessibility, 可用性, 無障礙, prototype, 原型, 設計系統]
+  context_boost: [figma, design, component, layout, mobile, responsive]
+  context_penalty: [backend, api, database, trading]
+  priority: high
 keywords: [creative, design, ui, ux, interface]
+dependencies:
+  software-skills: [frontend]
 author: claude-domain-skills
 ---
 

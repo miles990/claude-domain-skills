@@ -3,8 +3,16 @@ schema: "1.0"
 name: side-income
 version: "1.0.0"
 description: 副業與被動收入：網路賺錢、自媒體變現、投資理財、多元收入來源
-triggers: [副業, side hustle, 被動收入, passive income, 賺錢, make money, 網賺, 自媒體, 變現, monetization, 理財, 投資, investment, 財務自由, FIRE, 斜槓, 接案, freelance, 加密貨幣, crypto, 股票, stocks]
-keywords: [lifestyle, income, investment, finance]
+domain: lifestyle
+triggers:
+  keywords:
+    primary: [副業, side hustle, 被動收入, passive income, 賺錢, 投資, investment, 理財]
+    secondary: [網賺, 自媒體, 變現, monetization, FIRE, 斜槓, freelance, 接案, crypto, 股票, stocks]
+  context_boost: [財務, finance, 收入, income, 財富, wealth]
+  context_penalty: [code, 程式, api, 技術]
+  priority: medium
+dependencies:
+  software-skills: [e-commerce]
 author: claude-domain-skills
 ---
 

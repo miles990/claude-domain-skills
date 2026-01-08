@@ -3,8 +3,16 @@ schema: "1.0"
 name: visual-media
 version: "1.0.0"
 description: 影像創作：攝影、影片製作、動畫、電影、短影音、後製剪輯
-triggers: [攝影, photography, 影片, video, 動畫, animation, 電影, film, movie, 剪輯, editing, 後製, post-production, 短影音, reels, 拍攝, shooting, 分鏡, storyboard, 運鏡, camera movement, 調色, color grading]
-keywords: [creative, visual, video, photography, animation]
+domain: creative
+triggers:
+  keywords:
+    primary: [攝影, photography, 影片, video, 動畫, animation, 電影, film, 剪輯, editing]
+    secondary: [後製, post-production, 短影音, reels, 拍攝, 分鏡, storyboard, 運鏡, 調色, color grading]
+  context_boost: [視覺, visual, 創作, creative, 媒體, media]
+  context_penalty: [code, 程式, api, backend]
+  priority: high
+dependencies:
+  software-skills: []
 author: claude-domain-skills
 ---
 

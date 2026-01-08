@@ -1,10 +1,18 @@
 ---
 schema: "1.0"
 name: quant-trading
-version: "1.0.0"
+version: "1.1.0"
 description: 量化交易策略開發、回測與風險管理
-triggers: [量化, 交易, 回測, 策略, 因子, 套利, 程式交易, 演算法交易, quant, trading, backtest, strategy, factor, arbitrage, algo-trading]
+triggers:
+  keywords:
+    primary: [quant, trading, 量化, 交易, backtest, 回測, algo-trading, 演算法交易]
+    secondary: [strategy, 策略, factor, 因子, arbitrage, 套利, hedge, 對沖]
+  context_boost: [python, pandas, numpy, finance, investment, stock, futures]
+  context_penalty: [design, marketing, frontend]
+  priority: high
 keywords: [finance, trading, quantitative, investment]
+dependencies:
+  software-skills: [python, database, data-analysis]
 author: claude-domain-skills
 ---
 

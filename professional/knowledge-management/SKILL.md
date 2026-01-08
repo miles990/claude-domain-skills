@@ -3,8 +3,16 @@ schema: "1.0"
 name: knowledge-management
 version: "1.0.0"
 description: 知識管理：第二大腦、筆記系統、資訊整理、數位工具流
-triggers: [知識管理, knowledge management, 第二大腦, second brain, 筆記, note, PKM, 資訊整理, 卡片盒, zettelkasten, 數位花園, digital garden, 工具流, workflow, 生產力, productivity, 資訊化, 網路, 數位化]
-keywords: [professional, knowledge, productivity, tools]
+domain: professional
+triggers:
+  keywords:
+    primary: [知識管理, knowledge management, 第二大腦, second brain, 筆記, note-taking, PKM, zettelkasten, 卡片盒]
+    secondary: [資訊整理, 數位花園, digital garden, 工具流, workflow, PARA, Obsidian, Notion, Roam, Logseq]
+  context_boost: [生產力, productivity, 學習, learning, 輸出, output, 連結, linking]
+  context_penalty: [code, 程式, api, database, 技術]
+  priority: medium
+dependencies:
+  software-skills: [documentation]
 author: claude-domain-skills
 ---
 

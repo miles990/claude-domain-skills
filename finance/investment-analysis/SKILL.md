@@ -1,10 +1,18 @@
 ---
 schema: "1.0"
 name: investment-analysis
-version: "1.0.0"
+version: "1.1.0"
 description: 股票分析、財報解讀與投資決策
-triggers: [股票, 財報, 投資, 估值, 基本面, 技術分析, 本益比, ROE, stock, financial-report, investment, valuation, fundamental, technical, PE, ROE]
+triggers:
+  keywords:
+    primary: [股票, stock, 投資, investment, 財報, financial-report, 估值, valuation]
+    secondary: [基本面, fundamental, 技術分析, technical, PE, ROE, 本益比, 殖利率]
+  context_boost: [finance, analysis, portfolio, dividend, earnings]
+  context_penalty: [trading, algo, backtest]
+  priority: high
 keywords: [finance, investment, analysis, stock]
+dependencies:
+  software-skills: [python, data-analysis]
 author: claude-domain-skills
 ---
 

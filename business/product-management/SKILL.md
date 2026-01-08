@@ -3,8 +3,16 @@ schema: "1.0"
 name: product-management
 version: "1.0.0"
 description: 產品管理：PRD撰寫、用戶故事、OKR設定、路線圖規劃
-triggers: [PRD, 產品需求, 用戶故事, user story, OKR, 路線圖, roadmap, 產品規格, spec, 功能規劃, feature, 產品經理, PM, product]
-keywords: [business, product, management, planning]
+domain: business
+triggers:
+  keywords:
+    primary: [PRD, 產品需求, user story, OKR, roadmap, 產品經理, product manager]
+    secondary: [路線圖, 產品規格, spec, 功能規劃, feature, backlog, RICE, MoSCoW]
+  context_boost: [需求, requirement, 規劃, planning, 優先級, priority]
+  context_penalty: [code, 程式碼, database, api]
+  priority: high
+dependencies:
+  software-skills: [documentation, api-design]
 author: claude-domain-skills
 ---
 

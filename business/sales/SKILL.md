@@ -3,8 +3,16 @@ schema: "1.0"
 name: sales
 version: "1.0.0"
 description: 銷售技巧：B2B/B2C 銷售、客戶開發、電商營運、成交策略
-triggers: [銷售, sales, 業務, 成交, closing, 客戶開發, prospecting, CRM, 報價, 談判, negotiation, 電商營運, 訂單, 客單價, AOV, 購物車]
-keywords: [business, sales, commerce, negotiation]
+domain: business
+triggers:
+  keywords:
+    primary: [銷售, sales, 業務, CRM, 電商, ecommerce, B2B, B2C]
+    secondary: [成交, closing, 客戶開發, prospecting, 報價, 談判, negotiation, AOV, 客單價, 購物車]
+  context_boost: [客戶, customer, 營收, revenue, 轉換, conversion]
+  context_penalty: [code, 程式, api, database]
+  priority: high
+dependencies:
+  software-skills: [e-commerce]
 author: claude-domain-skills
 ---
 

@@ -3,8 +3,16 @@ schema: "1.0"
 name: project-management
 version: "1.0.0"
 description: 專案管理：敏捷開發、Scrum、甘特圖、風險管理、團隊協作
-triggers: [專案管理, project management, PM, Scrum, 敏捷, agile, sprint, 甘特圖, gantt, 里程碑, milestone, 排程, schedule, 風險管理, risk, 專案計畫, project plan, JIRA, 看板, kanban]
-keywords: [business, project, management, agile, scrum]
+domain: business
+triggers:
+  keywords:
+    primary: [專案管理, project management, PM, Scrum, 敏捷, agile, sprint, JIRA]
+    secondary: [甘特圖, gantt, 里程碑, milestone, 排程, schedule, 風險管理, risk, 看板, kanban, backlog]
+  context_boost: [團隊, team, 協作, 開發, software, 迭代, iteration]
+  context_penalty: [個人, marketing, 財務, finance]
+  priority: high
+dependencies:
+  software-skills: [git-workflows, documentation]
 author: claude-domain-skills
 ---
 
