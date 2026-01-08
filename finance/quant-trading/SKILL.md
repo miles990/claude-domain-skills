@@ -89,6 +89,100 @@ checklist = {
 | ❌ 用全部數據訓練 | ✅ 分割訓練/驗證/測試集 |
 | ❌ 單一策略 All-in | ✅ 多策略組合分散風險 |
 
+## Sharp Edges
+
+### SE-1: 回測過度擬合
+- **嚴重度**: critical
+- **情境**: 策略在回測中表現優異（夏普 > 3），但實盤虧損
+- **原因**: 參數針對歷史數據過度優化，捕捉的是噪音而非信號
+- **症狀**:
+  - 回測夏普比率異常高（> 3）
+  - 實盤表現遠低於回測（< 50%）
+  - 參數對微小變動敏感
+  - 交易次數過少，統計不顯著
+- **檢測**: `sharpe.*[3-9]\.|sharpe.*\d{2,}`
+- **解決**:
+  ```python
+  # ❌ 錯誤做法 - 只用一段數據優化
+  best_params = optimize(full_data)
+
+  # ✅ 正確做法 - Walk-forward 驗證
+  results = []
+  for train, test in walk_forward_split(data, n_splits=5):
+      params = optimize(train)
+      results.append(backtest(test, params))
+  final_sharpe = np.mean([r.sharpe for r in results])
+  ```
+
+### SE-2: 前視偏差 (Look-ahead Bias)
+- **嚴重度**: critical
+- **情境**: 回測時無意使用了未來數據
+- **原因**: 數據處理時沒有注意時間順序，或使用了 point-in-time 問題的數據
+- **症狀**:
+  - 回測報酬率完美
+  - 使用當日收盤價作為當日信號
+  - 基本面數據未考慮發布延遲
+- **檢測**: 程式碼中搜尋 `shift\(-|iloc\[-1\].*today`
+- **解決**:
+  ```python
+  # ❌ 錯誤做法 - 使用當天收盤計算當天信號
+  signal = prices['close'] > prices['close'].rolling(20).mean()
+
+  # ✅ 正確做法 - 信號要延遲一天
+  signal = prices['close'].shift(1) > prices['close'].shift(1).rolling(20).mean()
+  ```
+
+### SE-3: 生存者偏差
+- **嚴重度**: high
+- **情境**: 只使用當前存在的股票進行回測
+- **原因**: 退市、下市的股票被排除，導致高估策略表現
+- **症狀**:
+  - 回測報酬明顯高於實際可達成
+  - 小型股或低價股策略表現特別好
+  - 沒有包含退市股票
+- **解決**:
+  - 使用包含退市股票的完整數據庫
+  - 考慮退市時的損失（通常 -100%）
+  - 使用 Point-in-Time 數據供應商
+
+### SE-4: 忽略交易成本與滑價
+- **嚴重度**: high
+- **情境**: 高頻換手策略看起來很賺錢
+- **原因**: 沒有計入手續費和滑價，實際成本吃掉所有利潤
+- **症狀**:
+  - 年換手率 > 1000%
+  - 單筆獲利 < 0.5%
+  - 回測用收盤價成交
+- **解決**:
+  ```python
+  # 計入真實成本
+  commission = 0.001  # 0.1% 手續費
+  slippage = 0.002    # 0.2% 滑價
+  total_cost = commission + slippage  # 每筆 0.3%
+
+  # 調整後報酬
+  net_return = gross_return - (total_cost * turnover)
+  ```
+
+### SE-5: 過度自信於樣本內績效
+- **嚴重度**: medium
+- **情境**: 只看樣本內回測結果就決定上線
+- **原因**: 沒有保留獨立的測試集
+- **症狀**:
+  - 沒有 out-of-sample 測試
+  - 驗證集被重複使用多次
+  - 測試集數據量太少
+- **解決**:
+  ```python
+  # ✅ 正確的數據分割
+  train = data['2015':'2019']      # 訓練 (60%)
+  valid = data['2020':'2021']      # 驗證 (20%)
+  test = data['2022':'2023']       # 測試 (20%) - 只用一次！
+
+  # 開發時只用 train + valid
+  # 最終決策前才用 test
+  ```
+
 ## 工具推薦
 
 - **Backtrader** - Python 回測框架
