@@ -2,7 +2,7 @@
 
 > 非技術領域的專業知識 skills，讓 Claude 成為各領域專家
 
-[![Skills](https://img.shields.io/badge/skills-16-blue)](./README.md)
+[![Skills](https://img.shields.io/badge/skills-17-blue)](./README.md)
 [![Categories](https://img.shields.io/badge/categories-5-green)](./README.md)
 [![Compatible](https://img.shields.io/badge/skillpkg-1.0-orange)](https://github.com/anthropics/skillpkg)
 
@@ -30,7 +30,7 @@
 |------|--------|------|
 | **business/** | marketing, sales, product-management, project-management, strategy | 商業運營 |
 | **finance/** | quant-trading, investment-analysis | 金融專業 |
-| **creative/** | game-design, ui-ux-design, brainstorming, storytelling, visual-media | 創意創作 |
+| **creative/** | game-design, galgame-master, ui-ux-design, brainstorming, storytelling, visual-media | 創意創作 |
 | **professional/** | research-analysis, knowledge-management | 專業服務 |
 | **lifestyle/** | personal-growth, side-income | 生活領域 |
 
@@ -45,6 +45,7 @@
 | `business/marketing` | 行銷, CAC, 漏斗 | 行銷策略 |
 | `business/sales` | 銷售, 電商, CRM | 銷售與電商營運 |
 | `creative/game-design` | 遊戲, 關卡, 平衡 | 遊戲設計 |
+| `creative/galgame-master` | galgame, 美少女遊戲, 視覺小說, 攻略對象 | Galgame 創作 |
 | `creative/ui-ux-design` | UI, UX, 無障礙 | 介面體驗設計 |
 | `creative/brainstorming` | 靈感, 頭腦風暴, 創意 | 創意發想方法論 |
 | `creative/storytelling` | 小說, 漫畫, 劇本, 角色 | 故事創作與敘事 |
