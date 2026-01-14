@@ -2,7 +2,7 @@
 
 > 非技術領域的專業知識 skills，讓 Claude 成為各領域專家
 
-[![Skills](https://img.shields.io/badge/skills-17-blue)](./README.md)
+[![Skills](https://img.shields.io/badge/skills-18-blue)](./README.md)
 [![Categories](https://img.shields.io/badge/categories-5-green)](./README.md)
 [![Compatible](https://img.shields.io/badge/skillpkg-1.0-orange)](https://github.com/anthropics/skillpkg)
 
@@ -30,7 +30,7 @@
 |------|--------|------|
 | **business/** | marketing, sales, product-management, project-management, strategy | 商業運營 |
 | **finance/** | quant-trading, investment-analysis | 金融專業 |
-| **creative/** | game-design, game-planner, galgame-master, ui-ux-design, brainstorming, storytelling, visual-media | 創意創作 |
+| **creative/** | game-design, game-planner, galgame-master, deckbuilder-roguelike, ui-ux-design, brainstorming, storytelling, visual-media | 創意創作 |
 | **professional/** | research-analysis, knowledge-management | 專業服務 |
 | **lifestyle/** | personal-growth, side-income | 生活領域 |
 
@@ -47,6 +47,7 @@
 | `creative/game-design` | 遊戲, 關卡, 平衡 | 遊戲設計 |
 | `creative/game-planner` | GDD, 遊戲企劃, 設計支柱 | 遊戲企劃文件 |
 | `creative/galgame-master` | galgame, 美少女遊戲, 視覺小說, 攻略對象 | Galgame 創作 |
+| `creative/deckbuilder-roguelike` | Slay the Spire, 卡牌構築, deckbuilder, roguelike | 類 StS 卡牌 Roguelike 設計 |
 | `creative/ui-ux-design` | UI, UX, 無障礙 | 介面體驗設計 |
 | `creative/brainstorming` | 靈感, 頭腦風暴, 創意 | 創意發想方法論 |
 | `creative/storytelling` | 小說, 漫畫, 劇本, 角色 | 故事創作與敘事 |
@@ -225,7 +226,7 @@ skillpkg search "關鍵詞1"  # 應該能找到
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Quick Reference - 16 Domain Skills                             │
+│  Quick Reference - 18 Domain Skills                             │
 ├─────────────────────────────────────────────────────────────────┤
 │  💼 Business (5)                                                │
 │     marketing | sales | product-management                      │
@@ -234,8 +235,9 @@ skillpkg search "關鍵詞1"  # 應該能找到
 │  💰 Finance (2)                                                 │
 │     quant-trading | investment-analysis                         │
 ├─────────────────────────────────────────────────────────────────┤
-│  🎨 Creative (5)                                                │
-│     game-design | ui-ux-design | brainstorming                  │
+│  🎨 Creative (8)                                                │
+│     game-design | game-planner | galgame-master                 │
+│     deckbuilder-roguelike | ui-ux-design | brainstorming        │
 │     storytelling | visual-media                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │  🔬 Professional (2)                                            │
