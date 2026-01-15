@@ -2,7 +2,7 @@
 
 > 非技術領域的專業知識 skills，讓 Claude 成為各領域專家
 
-[![Skills](https://img.shields.io/badge/skills-19-blue)](./README.md)
+[![Skills](https://img.shields.io/badge/skills-22-blue)](./README.md)
 [![Categories](https://img.shields.io/badge/categories-6-green)](./README.md)
 [![Compatible](https://img.shields.io/badge/skillpkg-1.0-orange)](https://github.com/anthropics/skillpkg)
 
@@ -29,11 +29,11 @@
 | 大類 | 子領域 | 說明 |
 |------|--------|------|
 | **business/** | marketing, sales, product-management, project-management, strategy | 商業運營 |
-| **finance/** | quant-trading, investment-analysis | 金融專業 |
+| **finance/** | quant-trading, investment-analysis, strategy-optimization | 金融專業 |
 | **creative/** | game-design, game-planner, galgame-master, deckbuilder-roguelike, ui-ux-design, brainstorming, storytelling, visual-media | 創意創作 |
 | **professional/** | research-analysis, knowledge-management | 專業服務 |
 | **lifestyle/** | personal-growth, side-income | 生活領域 |
-| **methodology/** | tech-spec-gen | 開發方法論 |
+| **methodology/** | knowledge-acquisition-4c, tech-spec-gen | 開發方法論 |
 
 ### 已實現的領域
 
@@ -41,6 +41,7 @@
 |------|------------|------|
 | `finance/quant-trading` | 量化, backtest, 策略 | 量化交易策略開發 |
 | `finance/investment-analysis` | 財報, 投資, 估值 | 投資分析與估值 |
+| `finance/strategy-optimization` | 策略優化, 提高勝率, 調參 | 交易策略優化方法論 |
 | `business/product-management` | PRD, OKR, 路線圖 | 產品管理 |
 | `business/project-management` | Scrum, sprint, 甘特圖 | 專案管理 |
 | `business/marketing` | 行銷, CAC, 漏斗 | 行銷策略 |
@@ -58,6 +59,7 @@
 | `lifestyle/personal-growth` | 人生規劃, 個人品牌, 時間管理 | 個人成長與職涯發展 |
 | `lifestyle/side-income` | 副業, 被動收入, 投資, 加密貨幣 | 副業與財務自由 |
 | `professional/knowledge-management` | 知識管理, 筆記, PKM | 個人知識系統 |
+| `methodology/knowledge-acquisition-4c` | 學習, 研究, 進入新領域, 知識習得 | 系統化學習方法論 (4C) |
 | `methodology/tech-spec-gen` | tech-spec, 技術規格, 設計轉規格, PRD, GDD | 設計文件 → 技術規格轉換 |
 
 ## 安裝方式
@@ -228,14 +230,14 @@ skillpkg search "關鍵詞1"  # 應該能找到
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Quick Reference - 19 Domain Skills                             │
+│  Quick Reference - 22 Domain Skills                             │
 ├─────────────────────────────────────────────────────────────────┤
 │  💼 Business (5)                                                │
 │     marketing | sales | product-management                      │
 │     project-management | strategy                               │
 ├─────────────────────────────────────────────────────────────────┤
-│  💰 Finance (2)                                                 │
-│     quant-trading | investment-analysis                         │
+│  💰 Finance (3)                                                 │
+│     quant-trading | investment-analysis | strategy-optimization │
 ├─────────────────────────────────────────────────────────────────┤
 │  🎨 Creative (8)                                                │
 │     game-design | game-planner | galgame-master                 │
@@ -248,8 +250,8 @@ skillpkg search "關鍵詞1"  # 應該能找到
 │  🌱 Lifestyle (2)                                               │
 │     personal-growth | side-income                               │
 ├─────────────────────────────────────────────────────────────────┤
-│  🔧 Methodology (1)                                             │
-│     tech-spec-gen                                               │
+│  🔧 Methodology (2)                                             │
+│     knowledge-acquisition-4c | tech-spec-gen                    │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
