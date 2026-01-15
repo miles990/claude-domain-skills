@@ -4,7 +4,7 @@
 
 [![Skills](https://img.shields.io/badge/skills-24-blue)](./README.md)
 [![Categories](https://img.shields.io/badge/categories-6-green)](./README.md)
-[![Compatible](https://img.shields.io/badge/skillpkg-1.0-orange)](https://github.com/anthropics/skillpkg)
+[![Plugin](https://img.shields.io/badge/Claude_Code-Plugin-orange)](https://code.claude.com/docs/en/discover-plugins)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -66,21 +66,28 @@
 
 ## 安裝方式
 
-### 使用 skillpkg（推薦）
+### 使用 Plugin Marketplace（推薦）
 
-```python
-# 安裝特定領域
-mcp__skillpkg__install_skill(
-    source="github:miles990/claude-domain-skills#finance/quant-trading",
-    scope="local"
-)
+```bash
+# 1. 添加 marketplace
+/plugin marketplace add miles990/claude-domain-skills
 
-# 安裝整個大類
-mcp__skillpkg__install_skill(
-    source="github:miles990/claude-domain-skills#finance",
-    scope="local"
-)
+# 2. 安裝特定分類
+/plugin install finance@claude-domain-skills
+/plugin install creative@claude-domain-skills
+
+# 或在對話中直接提及 skill 名稱，Claude 會自動載入
 ```
+
+**可用分類：**
+| 分類 | Skills 數 | 說明 |
+|------|-----------|------|
+| `business` | 5 | 商業運營 |
+| `finance` | 3 | 金融專業 |
+| `creative` | 8 | 創意創作 |
+| `professional` | 2 | 專業服務 |
+| `lifestyle` | 2 | 生活領域 |
+| `methodology` | 4 | 開發方法論 |
 
 ### 使用 claude-starter-kit
 
@@ -221,7 +228,7 @@ keywords: [category1, category2]
 EOF
 
 # 3. 測試
-skillpkg search "關鍵詞1"  # 應該能找到
+# 在 Claude Code 對話中提及關鍵詞，應該能自動載入
 ```
 
 ## 貢獻指南
