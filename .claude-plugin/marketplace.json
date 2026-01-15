@@ -1,0 +1,52 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-domain-skills",
+  "description": "Skills collection converted to Plugin format",
+  "owner": {
+    "name": "miles990",
+    "email": "opensource@example.com"
+  },
+  "plugins": [
+    {
+      "name": "business",
+      "description": "5 skills in business category",
+      "source": "./business",
+      "category": "development"
+    }
+,
+    {
+      "name": "creative",
+      "description": "8 skills in creative category",
+      "source": "./creative",
+      "category": "development"
+    }
+,
+    {
+      "name": "finance",
+      "description": "3 skills in finance category",
+      "source": "./finance",
+      "category": "development"
+    }
+,
+    {
+      "name": "lifestyle",
+      "description": "2 skills in lifestyle category",
+      "source": "./lifestyle",
+      "category": "development"
+    }
+,
+    {
+      "name": "methodology",
+      "description": "4 skills in methodology category",
+      "source": "./methodology",
+      "category": "development"
+    }
+,
+    {
+      "name": "professional",
+      "description": "2 skills in professional category",
+      "source": "./professional",
+      "category": "development"
+    }
+  ]
+}
