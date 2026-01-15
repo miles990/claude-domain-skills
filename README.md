@@ -2,7 +2,7 @@
 
 > 非技術領域的專業知識 skills，讓 Claude 成為各領域專家
 
-[![Skills](https://img.shields.io/badge/skills-22-blue)](./README.md)
+[![Skills](https://img.shields.io/badge/skills-23-blue)](./README.md)
 [![Categories](https://img.shields.io/badge/categories-6-green)](./README.md)
 [![Compatible](https://img.shields.io/badge/skillpkg-1.0-orange)](https://github.com/anthropics/skillpkg)
 
@@ -33,7 +33,7 @@
 | **creative/** | game-design, game-planner, galgame-master, deckbuilder-roguelike, ui-ux-design, brainstorming, storytelling, visual-media | 創意創作 |
 | **professional/** | research-analysis, knowledge-management | 專業服務 |
 | **lifestyle/** | personal-growth, side-income | 生活領域 |
-| **methodology/** | knowledge-acquisition-4c, tech-spec-gen | 開發方法論 |
+| **methodology/** | knowledge-acquisition-4c, tech-spec-gen, skill-optimizer | 開發方法論 |
 
 ### 已實現的領域
 
@@ -61,6 +61,7 @@
 | `professional/knowledge-management` | 知識管理, 筆記, PKM | 個人知識系統 |
 | `methodology/knowledge-acquisition-4c` | 學習, 研究, 進入新領域, 知識習得 | 系統化學習方法論 (4C) |
 | `methodology/tech-spec-gen` | tech-spec, 技術規格, 設計轉規格, PRD, GDD | 設計文件 → 技術規格轉換 |
+| `methodology/skill-optimizer` | skill 優化, 減少 token, skill 瘦身 | Skill 優化與 token 效率 |
 
 ## 安裝方式
 
@@ -230,7 +231,7 @@ skillpkg search "關鍵詞1"  # 應該能找到
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Quick Reference - 22 Domain Skills                             │
+│  Quick Reference - 23 Domain Skills                             │
 ├─────────────────────────────────────────────────────────────────┤
 │  💼 Business (5)                                                │
 │     marketing | sales | product-management                      │
@@ -250,8 +251,8 @@ skillpkg search "關鍵詞1"  # 應該能找到
 │  🌱 Lifestyle (2)                                               │
 │     personal-growth | side-income                               │
 ├─────────────────────────────────────────────────────────────────┤
-│  🔧 Methodology (2)                                             │
-│     knowledge-acquisition-4c | tech-spec-gen                    │
+│  🔧 Methodology (3)                                             │
+│     knowledge-acquisition-4c | tech-spec-gen | skill-optimizer  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
