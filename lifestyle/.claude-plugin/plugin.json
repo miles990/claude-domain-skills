@@ -1,5 +1,13 @@
 {
   "name": "lifestyle",
-  "description": "2 skills for lifestyle",
-  "version": "1.0.0"
+  "description": "生活領域 skills：個人成長、副業收入",
+  "version": "1.0.0",
+  "author": {
+    "name": "miles990",
+    "email": "alexlee7171@gmail.com"
+  },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["lifestyle", "personal-growth", "side-income", "個人成長", "副業"]
 }

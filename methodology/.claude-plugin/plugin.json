@@ -1,5 +1,13 @@
 {
   "name": "methodology",
-  "description": "4 skills for methodology",
-  "version": "1.0.0"
+  "description": "開發方法論 skills：知識習得 4C、技術規格生成、Skill 優化、一致性檢查",
+  "version": "1.0.0",
+  "author": {
+    "name": "miles990",
+    "email": "alexlee7171@gmail.com"
+  },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["methodology", "knowledge-acquisition", "tech-spec", "skill-optimizer", "consistency-checker"]
 }

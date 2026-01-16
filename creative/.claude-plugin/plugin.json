@@ -1,5 +1,13 @@
 {
   "name": "creative",
-  "description": "8 skills for creative",
-  "version": "1.0.0"
+  "description": "創意創作 skills：遊戲設計、故事創作、UI/UX、腦力激盪、視覺媒體",
+  "version": "1.0.0",
+  "author": {
+    "name": "miles990",
+    "email": "alexlee7171@gmail.com"
+  },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["creative", "game-design", "storytelling", "ui-ux", "brainstorming", "visual-media", "galgame"]
 }
