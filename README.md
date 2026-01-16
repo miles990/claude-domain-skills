@@ -69,25 +69,27 @@
 ### 使用 Plugin Marketplace（推薦）
 
 ```bash
-# 1. 添加 marketplace
+# 1. 註冊 marketplace
 /plugin marketplace add miles990/claude-domain-skills
 
-# 2. 安裝特定分類
+# 2. 安裝特定分類的 plugin
+/plugin install business@claude-domain-skills
 /plugin install finance@claude-domain-skills
 /plugin install creative@claude-domain-skills
 
-# 或在對話中直接提及 skill 名稱，Claude 會自動載入
+# 3. 更新 plugin
+/plugin update business
 ```
 
-**可用分類：**
-| 分類 | Skills 數 | 說明 |
-|------|-----------|------|
-| `business` | 5 | 商業運營 |
-| `finance` | 3 | 金融專業 |
-| `creative` | 8 | 創意創作 |
-| `professional` | 2 | 專業服務 |
-| `lifestyle` | 2 | 生活領域 |
-| `methodology` | 4 | 開發方法論 |
+**可用 Plugins：**
+| Plugin | Skills 數 | 說明 |
+|--------|-----------|------|
+| `business` | 5 | 商業運營（marketing, sales, product/project-management, strategy） |
+| `finance` | 3 | 金融專業（quant-trading, investment-analysis, strategy-optimization） |
+| `creative` | 8 | 創意創作（game-design, storytelling, ui-ux 等） |
+| `professional` | 2 | 專業服務（research-analysis, knowledge-management） |
+| `lifestyle` | 2 | 生活領域（personal-growth, side-income） |
+| `methodology` | 4 | 開發方法論（4c, tech-spec-gen, skill-optimizer, consistency-checker） |
 
 ### 使用 claude-starter-kit
 
