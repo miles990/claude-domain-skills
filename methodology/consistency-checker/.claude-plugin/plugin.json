@@ -1,0 +1,10 @@
+{
+  "name": "consistency-checker",
+  "description": "內容一致性檢查器",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["consistency-checker", "check", "一致性", "sync"]
+}

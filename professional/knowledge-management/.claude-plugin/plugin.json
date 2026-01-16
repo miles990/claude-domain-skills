@@ -1,0 +1,10 @@
+{
+  "name": "knowledge-management",
+  "description": "個人知識管理系統",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["knowledge-management", "知識管理", "筆記", "PKM"]
+}

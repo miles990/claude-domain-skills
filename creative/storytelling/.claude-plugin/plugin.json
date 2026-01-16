@@ -1,0 +1,10 @@
+{
+  "name": "storytelling",
+  "description": "故事創作與敘事",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["storytelling", "小說", "漫畫", "劇本", "角色"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "skill-optimizer",
+  "description": "Skill 優化與 token 效率",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["skill-optimizer", "skill優化", "減少token", "瘦身"]
+}

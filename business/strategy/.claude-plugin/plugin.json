@@ -1,0 +1,10 @@
+{
+  "name": "strategy",
+  "description": "商業策略與競爭優勢",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["strategy", "策略", "藍海", "差異化"]
+}

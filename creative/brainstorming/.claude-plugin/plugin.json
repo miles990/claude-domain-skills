@@ -1,0 +1,10 @@
+{
+  "name": "brainstorming",
+  "description": "創意發想方法論",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["brainstorming", "靈感", "頭腦風暴", "創意"]
+}

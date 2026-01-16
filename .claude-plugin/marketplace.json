@@ -10,44 +10,170 @@
   },
   "plugins": [
     {
-      "name": "business",
-      "description": "商業運營 skills（marketing, sales, product/project-management, strategy）",
-      "source": "./business",
+      "name": "marketing",
+      "description": "行銷策略與數位行銷",
+      "source": "./business/marketing",
       "version": "1.0.0",
       "strict": true
     },
     {
-      "name": "creative",
-      "description": "創意創作 skills（game-design, storytelling, ui-ux, brainstorming 等）",
-      "source": "./creative",
+      "name": "product-management",
+      "description": "產品管理與 PRD",
+      "source": "./business/product-management",
       "version": "1.0.0",
       "strict": true
     },
     {
-      "name": "finance",
-      "description": "金融專業 skills（quant-trading, investment-analysis, strategy-optimization）",
-      "source": "./finance",
+      "name": "project-management",
+      "description": "專案管理與 Scrum",
+      "source": "./business/project-management",
       "version": "1.0.0",
       "strict": true
     },
     {
-      "name": "lifestyle",
-      "description": "生活領域 skills（personal-growth, side-income）",
-      "source": "./lifestyle",
+      "name": "sales",
+      "description": "銷售與電商營運",
+      "source": "./business/sales",
       "version": "1.0.0",
       "strict": true
     },
     {
-      "name": "methodology",
-      "description": "開發方法論 skills（knowledge-acquisition-4c, tech-spec-gen, skill-optimizer, consistency-checker）",
-      "source": "./methodology",
+      "name": "strategy",
+      "description": "商業策略與競爭優勢",
+      "source": "./business/strategy",
       "version": "1.0.0",
       "strict": true
     },
     {
-      "name": "professional",
-      "description": "專業服務 skills（research-analysis, knowledge-management）",
-      "source": "./professional",
+      "name": "brainstorming",
+      "description": "創意發想方法論",
+      "source": "./creative/brainstorming",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "deckbuilder-roguelike",
+      "description": "類 StS 卡牌 Roguelike 設計",
+      "source": "./creative/deckbuilder-roguelike",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "galgame-master",
+      "description": "Galgame 視覺小說創作",
+      "source": "./creative/galgame-master",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "game-design",
+      "description": "遊戲設計與關卡平衡",
+      "source": "./creative/game-design",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "game-planner",
+      "description": "遊戲企劃 GDD 文件",
+      "source": "./creative/game-planner",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "storytelling",
+      "description": "故事創作與敘事",
+      "source": "./creative/storytelling",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "ui-ux-design",
+      "description": "UI/UX 介面體驗設計",
+      "source": "./creative/ui-ux-design",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "visual-media",
+      "description": "影像創作與製作",
+      "source": "./creative/visual-media",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "investment-analysis",
+      "description": "投資分析與估值",
+      "source": "./finance/investment-analysis",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "quant-trading",
+      "description": "量化交易策略開發",
+      "source": "./finance/quant-trading",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "strategy-optimization",
+      "description": "交易策略優化",
+      "source": "./finance/strategy-optimization",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "personal-growth",
+      "description": "個人成長與職涯發展",
+      "source": "./lifestyle/personal-growth",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "side-income",
+      "description": "副業與財務自由",
+      "source": "./lifestyle/side-income",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "consistency-checker",
+      "description": "內容一致性檢查器",
+      "source": "./methodology/consistency-checker",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "knowledge-acquisition-4c",
+      "description": "系統化學習方法論 4C",
+      "source": "./methodology/knowledge-acquisition-4c",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "skill-optimizer",
+      "description": "Skill 優化與 token 效率",
+      "source": "./methodology/skill-optimizer",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "tech-spec-gen",
+      "description": "設計文件轉技術規格",
+      "source": "./methodology/tech-spec-gen",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "knowledge-management",
+      "description": "個人知識管理系統",
+      "source": "./professional/knowledge-management",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "research-analysis",
+      "description": "研究分析方法論",
+      "source": "./professional/research-analysis",
       "version": "1.0.0",
       "strict": true
     }

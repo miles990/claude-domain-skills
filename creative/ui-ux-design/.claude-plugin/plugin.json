@@ -1,0 +1,10 @@
+{
+  "name": "ui-ux-design",
+  "description": "UI/UX 介面體驗設計",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["ui-ux", "UI", "UX", "無障礙"]
+}

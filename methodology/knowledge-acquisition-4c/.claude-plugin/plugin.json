@@ -1,0 +1,10 @@
+{
+  "name": "knowledge-acquisition-4c",
+  "description": "系統化學習方法論 4C",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["knowledge-acquisition-4c", "學習", "研究", "知識習得"]
+}

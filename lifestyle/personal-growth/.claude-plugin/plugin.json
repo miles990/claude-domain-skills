@@ -1,0 +1,10 @@
+{
+  "name": "personal-growth",
+  "description": "個人成長與職涯發展",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["personal-growth", "人生規劃", "個人品牌", "時間管理"]
+}

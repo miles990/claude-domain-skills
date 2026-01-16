@@ -1,0 +1,10 @@
+{
+  "name": "sales",
+  "description": "銷售與電商營運",
+  "version": "1.0.0",
+  "author": { "name": "miles990", "email": "alexlee7171@gmail.com" },
+  "homepage": "https://github.com/miles990/claude-domain-skills",
+  "repository": "https://github.com/miles990/claude-domain-skills",
+  "license": "MIT",
+  "keywords": ["sales", "銷售", "電商", "CRM"]
+}
