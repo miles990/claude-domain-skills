@@ -1,52 +1,55 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-domain-skills",
-  "description": "Skills collection converted to Plugin format",
   "owner": {
     "name": "miles990",
-    "email": "opensource@example.com"
+    "email": "alexlee7171@gmail.com"
+  },
+  "metadata": {
+    "description": "非技術領域的專業知識 skills，讓 Claude 成為各領域專家",
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "business",
-      "description": "5 skills in business category",
-      "source": "./business",
-      "category": "development"
-    }
-,
+      "description": "商業運營 skills（marketing, sales, product/project-management, strategy）",
+      "source": { "source": "local", "path": "./business" },
+      "version": "1.0.0",
+      "strict": true
+    },
     {
       "name": "creative",
-      "description": "8 skills in creative category",
-      "source": "./creative",
-      "category": "development"
-    }
-,
+      "description": "創意創作 skills（game-design, storytelling, ui-ux, brainstorming 等）",
+      "source": { "source": "local", "path": "./creative" },
+      "version": "1.0.0",
+      "strict": true
+    },
     {
       "name": "finance",
-      "description": "3 skills in finance category",
-      "source": "./finance",
-      "category": "development"
-    }
-,
+      "description": "金融專業 skills（quant-trading, investment-analysis, strategy-optimization）",
+      "source": { "source": "local", "path": "./finance" },
+      "version": "1.0.0",
+      "strict": true
+    },
     {
       "name": "lifestyle",
-      "description": "2 skills in lifestyle category",
-      "source": "./lifestyle",
-      "category": "development"
-    }
-,
+      "description": "生活領域 skills（personal-growth, side-income）",
+      "source": { "source": "local", "path": "./lifestyle" },
+      "version": "1.0.0",
+      "strict": true
+    },
     {
       "name": "methodology",
-      "description": "4 skills in methodology category",
-      "source": "./methodology",
-      "category": "development"
-    }
-,
+      "description": "開發方法論 skills（knowledge-acquisition-4c, tech-spec-gen, skill-optimizer, consistency-checker）",
+      "source": { "source": "local", "path": "./methodology" },
+      "version": "1.0.0",
+      "strict": true
+    },
     {
       "name": "professional",
-      "description": "2 skills in professional category",
-      "source": "./professional",
-      "category": "development"
+      "description": "專業服務 skills（research-analysis, knowledge-management）",
+      "source": { "source": "local", "path": "./professional" },
+      "version": "1.0.0",
+      "strict": true
     }
   ]
 }
