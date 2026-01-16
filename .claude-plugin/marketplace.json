@@ -12,42 +12,42 @@
     {
       "name": "business",
       "description": "商業運營 skills（marketing, sales, product/project-management, strategy）",
-      "source": { "source": "local", "path": "./business" },
+      "source": "./business",
       "version": "1.0.0",
       "strict": true
     },
     {
       "name": "creative",
       "description": "創意創作 skills（game-design, storytelling, ui-ux, brainstorming 等）",
-      "source": { "source": "local", "path": "./creative" },
+      "source": "./creative",
       "version": "1.0.0",
       "strict": true
     },
     {
       "name": "finance",
       "description": "金融專業 skills（quant-trading, investment-analysis, strategy-optimization）",
-      "source": { "source": "local", "path": "./finance" },
+      "source": "./finance",
       "version": "1.0.0",
       "strict": true
     },
     {
       "name": "lifestyle",
       "description": "生活領域 skills（personal-growth, side-income）",
-      "source": { "source": "local", "path": "./lifestyle" },
+      "source": "./lifestyle",
       "version": "1.0.0",
       "strict": true
     },
     {
       "name": "methodology",
       "description": "開發方法論 skills（knowledge-acquisition-4c, tech-spec-gen, skill-optimizer, consistency-checker）",
-      "source": { "source": "local", "path": "./methodology" },
+      "source": "./methodology",
       "version": "1.0.0",
       "strict": true
     },
     {
       "name": "professional",
       "description": "專業服務 skills（research-analysis, knowledge-management）",
-      "source": { "source": "local", "path": "./professional" },
+      "source": "./professional",
       "version": "1.0.0",
       "strict": true
     }
