@@ -69,29 +69,102 @@
 ### 使用 Plugin Marketplace（推薦）
 
 ```bash
-# 1. 註冊 marketplace
+# 1. 添加 marketplace（GitHub 格式：owner/repo）
 /plugin marketplace add miles990/claude-domain-skills
 
-# 2. 安裝特定分類的 plugin
-/plugin install business@claude-domain-skills
-/plugin install finance@claude-domain-skills
-/plugin install creative@claude-domain-skills
+# 2. 開啟 plugin 管理介面，在 Discover 頁籤查看可用 plugins
+/plugin
 
-# 3. 更新 plugin
-/plugin update business
+# 3. 安裝特定 skill（選擇你需要的）
+/plugin install marketing@claude-domain-skills
+/plugin install quant-trading@claude-domain-skills
+/plugin install game-design@claude-domain-skills
+
+# 或在對話中提及 skill 名稱，Claude 會自動載入
 ```
 
-**可用 Plugins：**
-| Plugin | Skills 數 | 說明 |
-|--------|-----------|------|
-| `business` | 5 | 商業運營（marketing, sales, product/project-management, strategy） |
-| `finance` | 3 | 金融專業（quant-trading, investment-analysis, strategy-optimization） |
-| `creative` | 8 | 創意創作（game-design, storytelling, ui-ux 等） |
-| `professional` | 2 | 專業服務（research-analysis, knowledge-management） |
-| `lifestyle` | 2 | 生活領域（personal-growth, side-income） |
-| `methodology` | 4 | 開發方法論（4c, tech-spec-gen, skill-optimizer, consistency-checker） |
+**支援的 GitHub 格式：**
+```bash
+# 短格式（推薦）
+/plugin marketplace add miles990/claude-domain-skills
 
-### 使用 claude-starter-kit
+# HTTPS URL
+/plugin marketplace add https://github.com/miles990/claude-domain-skills.git
+
+# 指定分支或標籤
+/plugin marketplace add miles990/claude-domain-skills#main
+```
+
+**Plugin 指令：**
+| 指令 | 說明 |
+|------|------|
+| `/plugin` | 開啟互動式 plugin 管理介面 |
+| `/plugin install <name>@<marketplace>` | 安裝特定 plugin |
+| `/plugin disable <name>@<marketplace>` | 暫時停用 plugin |
+| `/plugin uninstall <name>@<marketplace>` | 完全移除 plugin |
+
+### 可用 Plugins（24 個）
+
+#### Business（商業運營）
+| Plugin | 說明 |
+|--------|------|
+| `marketing` | 行銷策略與數位行銷 |
+| `product-management` | 產品管理與 PRD |
+| `project-management` | 專案管理與 Scrum |
+| `sales` | 銷售與電商營運 |
+| `strategy` | 商業策略與競爭優勢 |
+
+#### Finance（金融專業）
+| Plugin | 說明 |
+|--------|------|
+| `quant-trading` | 量化交易策略開發 |
+| `investment-analysis` | 投資分析與估值 |
+| `strategy-optimization` | 交易策略優化 |
+
+#### Creative（創意創作）
+| Plugin | 說明 |
+|--------|------|
+| `game-design` | 遊戲設計與關卡平衡 |
+| `game-planner` | 遊戲企劃 GDD 文件 |
+| `galgame-master` | Galgame 視覺小說創作 |
+| `deckbuilder-roguelike` | 類 StS 卡牌 Roguelike 設計 |
+| `ui-ux-design` | UI/UX 介面體驗設計 |
+| `brainstorming` | 創意發想方法論 |
+| `storytelling` | 故事創作與敘事 |
+| `visual-media` | 影像創作與製作 |
+
+#### Professional（專業服務）
+| Plugin | 說明 |
+|--------|------|
+| `research-analysis` | 研究分析方法論 |
+| `knowledge-management` | 個人知識管理系統 |
+
+#### Lifestyle（生活領域）
+| Plugin | 說明 |
+|--------|------|
+| `personal-growth` | 個人成長與職涯發展 |
+| `side-income` | 副業與財務自由 |
+
+#### Methodology（方法論）
+| Plugin | 說明 |
+|--------|------|
+| `knowledge-acquisition-4c` | 系統化學習方法論 4C |
+| `tech-spec-gen` | 設計文件轉技術規格 |
+| `skill-optimizer` | Skill 優化與 token 效率 |
+| `consistency-checker` | 內容一致性檢查器 |
+
+### 其他安裝方式
+
+#### Clone 到 Skills 目錄
+
+```bash
+# Clone 到你的 skills 目錄
+git clone https://github.com/miles990/claude-domain-skills.git ~/.claude/skills/domain-skills
+```
+
+Claude 會在需要時自動發現並使用相關的 skills。
+
+#### 使用 claude-starter-kit
 
 ```bash
 npx claude-starter-kit
@@ -229,7 +302,17 @@ keywords: [category1, category2]
 ...
 EOF
 
-# 3. 測試
+# 3. 添加到 marketplace.json（讓它成為可安裝的 plugin）
+# 在 .claude-plugin/marketplace.json 的 plugins 陣列中添加：
+{
+  "name": "my-domain",
+  "description": "領域描述",
+  "source": "./finance/my-domain",
+  "version": "1.0.0",
+  "strict": true
+}
+
+# 4. 測試
 # 在 Claude Code 對話中提及關鍵詞，應該能自動載入
 ```
 
@@ -265,6 +348,26 @@ EOF
 │     knowledge-acquisition-4c | tech-spec-gen | skill-optimizer  │
 │     consistency-checker                                         │
 └─────────────────────────────────────────────────────────────────┘
+```
+
+## 目錄結構
+
+```
+claude-domain-skills/
+├── .claude-plugin/          # Plugin 設定
+│   └── marketplace.json     # 列出所有 24 個 skills 作為獨立 plugins
+├── business/                # 商業運營（5 skills）
+├── finance/                 # 金融專業（3 skills）
+├── creative/                # 創意創作（8 skills）
+├── professional/            # 專業服務（2 skills）
+├── lifestyle/               # 生活領域（2 skills）
+├── methodology/             # 方法論（4 skills）
+├── interfaces/              # 介面定義
+├── docs/                    # 文件
+├── SKILL-TEMPLATE.md        # Skill 建立模板
+├── CONTRIBUTING.md          # 貢獻指南
+├── README.md
+└── LICENSE
 ```
 
 ## 相關專案
